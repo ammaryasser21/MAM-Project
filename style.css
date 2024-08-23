@@ -1,0 +1,373 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+button,
+p,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    scroll-padding-top: 50px;
+    scroll-behavior: smooth
+}
+
+nav {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 82px
+}
+
+.logo img {
+    width: 200px;
+    mix-blend-mode: multiply
+}
+
+nav .links ul {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    list-style: none
+}
+
+nav .links ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+    font-weight: 500
+}
+
+nav .links ul li a.Active {
+    color: #000
+}
+
+nav .links ul li a:hover {
+    color: #000;
+    -o-transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out
+}
+
+.search-btn {
+    outline: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: transparent;
+    gap: 10px;
+    padding: 5px 15px;
+    background-color: #c5c5c5;
+    color: #fff;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.search-btn:hover {
+    background-color: #6a6a6a;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    z-index: 1000
+}
+
+.top-button.show {
+    display: block
+}
+
+main {
+    margin: 70px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f55e;
+    padding: 0 70px;
+    gap: 232px
+}
+
+main .player-image {
+    position: absolute;
+    z-index: 100;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -o-transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+    cursor: pointer;
+    top: 68px;
+    left: 21%;
+    width: 53%
+}
+
+main .player-image:hover {
+    position: absolute;
+    -webkit-filter: none;
+    filter: none;
+    -o-transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+    top: 50px;
+    left: 21%;
+    width: 55%
+}
+
+main .main-content {
+    position: relative;
+    top: -28px;
+    left: -151px
+}
+
+main .main-content p {
+    position: absolute;
+    z-index: 99;
+    font-size: 70px;
+    font-weight: 900;
+    width: 390px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    top: 43%;
+    left: 53%;
+    transform: translate(-50%, -50%)
+}
+
+main .cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 174px
+}
+
+main .cards h2 {
+    font-size: 20px;
+    background-color: #e8e8ec;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: fit-content;
+    padding: 4px 15px;
+    margin-bottom: 14px;
+    border-radius: 3px;
+    color: #bbb
+}
+
+.img {
+    -o-border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s
+
+}
+
+.img:hover { cursor: pointer; transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1);
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s
+}
+
+.img.img1 {
+    background: url("/assets/beautiful-young-african-woman-sports-clothing-running-against-gray-background 1.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative
+}
+
+.img.img2 {
+    background: url("/assets/fastaccelerating-race-car-formula-one-racing-amid-sunset-generative-ai 1.png");
+    background-size: cover;
+    background-position: center;
+    position: relative
+}
+
+.gradient-text {
+    text-transform: uppercase;
+    background: linear-gradient(to top, #b9b7b7, #2a2a2a);
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #dfdede 30%, transparent 70%);
+    -webkit-background-clip: content-box;
+    color: transparent
+}
+
+.cards .content {
+    position: absolute;
+    bottom: 0;
+    padding: 20px
+}
+
+.cards .content p {
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 35px
+}
+
+.cards .content p:nth-child(1) {
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 12px;
+    padding-bottom: 5px;
+    color: #9b9b9b
+}
+
+.cards .content p:nth-child(2) {
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 15px
+}
+
+.img:hover .content p:nth-child(2) {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.sp1 {
+    width: 202px
+}
+
+.sp2 {
+    width: 213px
+}
+
+.one {
+    padding-bottom: 20px
+}
+
+main .bottom-content {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    left: 52%;
+    transform: translateX(-50%);
+    width: 352px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 100
+}
+
+main .bottom-content p {
+    font-size: large;
+    font-weight: 500;
+    line-height: 1.3
+}
+
+main .bottom-content a {
+    width: fit-content;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: #313131;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s
+}
+
+main .bottom-content a:hover {
+    color: #fff;
+    background-color: #575757;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s
+}
+
+.cards .one {
+    width: 251px
+}
+/*! this is option  */
+.custom-cursor {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    background-color: white;
+    mix-blend-mode: difference;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease, transform 0.2s ease;
+  }
+  
+  body:hover .custom-cursor {
+    width: 60px;
+    height: 60px;
+  }
+  
+  * {
+    cursor: none;
+  }
+  /*! end*/
+  
