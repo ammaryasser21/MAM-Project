@@ -211,7 +211,7 @@ main .cards h2 {
 
 }
 
-.img:hover { cursor: pointer; transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1);
+.img:hover { cursor: pointer; -o-transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1);
     -o-transition: all .3s;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -220,14 +220,14 @@ main .cards h2 {
 }
 
 .img.img1 {
-    background: url("/assets/beautiful-young-african-woman-sports-clothing-running-against-gray-background 1.webp");
+    background: url("./assets/beautiful-young-african-woman-sports-clothing-running-against-gray-background 1.webp");
     background-size: cover;
     background-position: center;
     position: relative
 }
 
 .img.img2 {
-    background: url("/assets/fastaccelerating-race-car-formula-one-racing-amid-sunset-generative-ai 1.png");
+    background: url("./assets/fastaccelerating-race-car-formula-one-racing-amid-sunset-generative-ai 1.png");
     background-size: cover;
     background-position: center;
     position: relative
@@ -237,6 +237,7 @@ main .cards h2 {
     text-transform: uppercase;
     background: linear-gradient(to top, #b9b7b7, #2a2a2a);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent
 }
 
@@ -248,6 +249,7 @@ main .cards h2 {
     bottom: 0;
     background: linear-gradient(to top, #dfdede 30%, transparent 70%);
     -webkit-background-clip: content-box;
+    background-clip: content-box;
     color: transparent
 }
 
