@@ -188,6 +188,7 @@ main .cards h2 {
     background-color: #e8e8ec;
     font-weight: 600;
     text-transform: capitalize;
+    width:-moz-fit-content;
     width: fit-content;
     padding: 4px 15px;
     margin-bottom: 14px;
@@ -316,7 +317,8 @@ main .bottom-content p {
 }
 
 main .bottom-content a {
-    width: fit-content;
+    width:-moz-fit-content;
+    width:fit-content;
     text-decoration: none;
     color: #fff;
     font-weight: 600;
