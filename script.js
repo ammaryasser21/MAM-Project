@@ -1,5 +1,12 @@
 const topButton = document.querySelector(".top-button");
 const links = document.querySelectorAll(".links a");
+const cursor = document.querySelector('.custom-cursor');
+const menu=document.querySelector('.hamburger-menu');
+const mobileMenu=document.querySelector('.mobile-menu');
+
+menu.addEventListener('click', function() {
+  mobileMenu.classList.toggle('open');
+});
 
 
 window.addEventListener("scroll", function () {
@@ -27,9 +34,11 @@ const Activate = () => {
 };
 Activate();
 
-const cursor = document.querySelector('.custom-cursor');
+
 
   document.addEventListener('mousemove', (e) => {
     cursor.style.left = `${e.clientX}px`;
     cursor.style.top = `${e.clientY}px`;
   });
+
+
