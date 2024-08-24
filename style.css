@@ -5,6 +5,9 @@ html {
     padding: 0;
     box-sizing: border-box
 }
+body{
+    font-family: Arial, sans-serif;
+}
 
 button,
 p,
@@ -53,7 +56,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-around
 }
 
 .logo img {
@@ -106,7 +109,7 @@ nav .links ul li a:hover {
     border-radius: 5px;
     font-size: 14px;
     transition: all .3s ease-in-out;
-    cursor: pointer;
+    cursor: none;
     border: none
 }
 
@@ -117,7 +120,7 @@ nav .links ul li a:hover {
 .hamburger-menu {
     display: none;
     flex-direction: column;
-    cursor: pointer;
+    cursor: none;
     gap: 5px;
     margin: 0 20px
 }
@@ -128,7 +131,9 @@ nav .links ul li a:hover {
     background-color: #333;
     border-radius: 3px
 }
-
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: none;
+}
 .mobile-menu {
     display: none;
     position: fixed;
@@ -159,7 +164,7 @@ nav .links ul li a:hover {
     border: none;
     border-radius: 5px;
     font-size: 14px;
-    cursor: pointer
+    cursor: none
 }
 
 @media (max-width:768px) {
@@ -504,6 +509,7 @@ main .bottom-content a:hover {
         z-index: 99;
         font-size: 70px;
         font-weight: 900;
+        width:-moz-fit-content;
         width: fit-content;
         right: 0;
         display: flex;
@@ -610,7 +616,8 @@ main .bottom-content a:hover {
         z-index: 99;
         font-size: 50px;
         font-weight: 900;
-        width: auto;
+        width: -moz-fit-content;
+        width: fit-content;
         right: 0;
         display: flex;
         flex-direction: column;
@@ -703,3 +710,179 @@ body:hover .custom-cursor {
 }
 
 /*! end*/
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+
+}
+
+.container section{
+display: grid;
+place-items:center;
+}
+/*! ///////////////////  */
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        'one photo2 three photo4'
+        'photo1 photo2 photo3 photo4'
+        'photo1 photo2 photo3 photo4'
+        'photo1 two photo3 four';
+    width: 1250px;
+    padding: 50px;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.category {
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-text2 {
+    font-weight: 800;
+    font-size: 28px;
+    background: linear-gradient(to bottom, #1f1f1f, #d6d3d3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    color: transparent;
+}
+
+.photo1,
+.photo2,
+.photo3,
+.photo4 {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.photo1 {
+    grid-area: photo1;
+    background-image: url("assets/soccer-ball-green-grass-soccer-field-generative-ai 1.png");
+}
+
+.photo2 {
+    grid-area: photo2;
+    background-image: url("assets/close-up-basketball-outdoors 1.png");
+}
+
+.photo3 {
+    grid-area: photo3;
+    background-image: url("assets/sport-car-is-drifting-track-with-smoke-around-it 1.png");
+}
+
+.photo4 {
+    grid-area: photo4;
+    background-image: url("assets/red-ping-pong-racket-sports-equipment 1.png");
+}
+
+.photo1:hover,
+.photo2:hover,
+.photo3:hover,
+.photo4:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#one, #two, #three, #four {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#one:hover,
+#two:hover,
+#three:hover,
+#four:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+@media (max-width:768px) {
+    .container{
+        max-width: 100%;
+    
+    }
+    .grid-container {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            'one photo1'
+            'photo2 photo1'
+            'photo2 two'
+            'three photo3'
+            'photo4 photo3'
+            'photo4 four'
+            ;
+        width: 90vw;
+        padding: 20px;
+        gap: 20px;
+        overflow: hidden;
+    }
+}
+@media (max-width:450px) {
+    .container{
+        max-width: 100%;
+    
+    }
+    .grid-container {
+        display: grid;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            'one'
+            'photo1'
+            'photo1'
+            'two'
+            'photo2'
+            'photo2'
+            'three'
+            'photo3'
+            'photo3'
+            'four'
+            'photo4'
+            'photo4'
+            ;
+        width: 90vw;
+        gap: 20px;
+        overflow: hidden;
+    }
+}
+
+/*! ///////////////////  */
+
