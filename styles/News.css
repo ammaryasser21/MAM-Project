@@ -31,6 +31,7 @@
 }
 .sec3_5 {
   grid-area: sec3_5;
+  height: 100%;
 }
 .picCon {
   position: relative;
@@ -108,18 +109,24 @@
 .table-container {
   width: 100%;
   overflow-x: auto;
+  height: 100%;
 }
 .league-table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
+  height: 100%;
 }
 .league-table td,
 .league-table th {
   padding: 12px;
-  text-align: left;
+
 }
-.league-table thead tr,.league-table tbody tr:not(:last-child){
+.club span:first-child{
+  font-weight: 700;
+  padding-right: 5px;
+}
+.league-table tbody tr:not(:last-child){
   border-bottom: 1px solid #ddd;
 }
 .league-table tbody .club{
@@ -127,12 +134,7 @@
     align-items: center;
     gap: 5px;
 }
-.league-table td,
-.league-table th {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
+
 .league-table th {
   text-transform: uppercase;
   font-size: 14px;
