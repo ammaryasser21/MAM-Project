@@ -10,7 +10,12 @@
 .blur p{margin:0;font-size:14px;font-weight:400}
 .blur .highlights{font-size:11px;margin-bottom:10px}
 .latestCon{display:flex;flex-direction:column;gap:15px}
-.newsCon{display:flex;flex-direction:row;align-items:center;gap:20px}
+.newsCon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
 .newsCon img{width:29%;object-fit:cover}
 .newsDetails{display:flex;flex-direction:column;justify-content:center}
 .date5{margin:0;font-size:12px;color:#888}

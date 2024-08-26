@@ -78,48 +78,5 @@ function erase() {
 setTimeout(type, 1000);
 
 
-let fullHeight = () => {
-  if (window.innerWidth >= 1024 && window.innerWidth <= 1440) {
-    const photos = document.querySelectorAll(".photo1, .photo2, .photo3, .photo4");
-    const items = {
-      photo1: document.getElementById("one"),
-      photo2: document.getElementById("three"),
-      photo3: document.getElementById("two"),
-      photo4: document.getElementById("four"),
-    };
-
-    photos.forEach(photo => {
-      photo.addEventListener("mouseover", function() {
-        const gridArea = this.classList[0];
-        items[gridArea].style.display = "none";
-
-        switch (gridArea) {
-          case "photo1":
-            this.style.gridArea = "1 / 1 / 5 / 2";
-            break;
-          case "photo2":
-            this.style.gridArea = "1 / 2 / 5 / 3";
-            break;
-          case "photo3":
-            this.style.gridArea = "1 / 3 / 5 / 4";
-            break;
-          case "photo4":
-            this.style.gridArea = "1 / 4 / 5 / 5";
-            break;
-        }
-      });
-
-      photo.addEventListener("mouseout", function() {
-        const gridArea = this.classList[0];
-        items[gridArea].style.display = "grid";
-        this.style.gridArea = "";
-      });
-    });
-  }
-};
-
-fullHeight();
-
-window.addEventListener("resize", fullHeight);
 
 
