@@ -2,120 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sport News</title>
-    <meta name="description" content="this is project for MAM summer training">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="assets/icon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sport News</title>
+  <meta name="description" content="this is project for MAM summer training">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/Category.css">
+  <link rel="stylesheet" href="/styles/Trending.css">
+  <link rel="stylesheet" href="/styles/Football.css">
+  <link rel="stylesheet" href="/styles/News.css">
+  <link rel="stylesheet" href="/styles/Articals.css">
+  <link rel="stylesheet" href="/styles/newsLetter.css">
 </head>
 
 <body>
-    <div class="custom-cursor"></div>
-    <header>
-        <Nav>
-            <div class="logo">
-              <a href="#Home">
-                <img src="assets/logo1.png" alt="logo">
-              </a>
-            </div>
-            <div class="links">
-              <ul>
-                <li><a href="#Home" class="Active">Home</a></li>
-                <li><a href="#Category">Category</a></li>
-                <li><a href="#Trending">Trending News</a></li>
-                <li><a href="#Football">Recent News</a></li>
-                <li><a href="#News">Clubs Ranking</a></li>
-                <li><a href="#Articals">Sports Article</a></li>
-              </ul>
-            </div>
-            <button type="button" class="search-btn">
-              <i class="fas fa-search"></i>
-              <p>Search</p>
-            </button>
-            <div class="hamburger-menu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="mobile-menu">
-              <ul>
-                <li><a href="#Home" class="Active">Home</a></li>
-                <li><a href="#Category">Category</a></li>
-                <li><a href="#Trending">Trending News</a></li>
-                <li><a href="#Football">Recent News</a></li>
-                <li><a href="#News">Clubs Ranking</a></li>
-                <li><a href="#Articals">Sports Article</a></li>
-                <li><button type="button" class="search-btn-mobile">Search</button></li>
-              </ul>
-            </div>
-          </Nav>
-          
+  <div class="custom-cursor"></div>
+  <header>
 
-        <main id="Home">
-            <div class="main-content">
-                <p class="gradient-text"><span>Top </span><span class="typed-text">Scorer to the final match</span></p>
-                <img src="assets/basketball_sport_icon_in_minimalist_3d_render_2 1.png" alt="">
-            </div>
-            <img src="assets/output.png" alt="player" class="player-image">
-            <div class="bottom-content">
-                <p>The EuroLeague Finals Top Scorer is the individual award for the player that gained the highest points in the EuroLeague Finals</p>
-                <a href="https://en.wikipedia.org/wiki/EuroLeague_Finals_Top_Scorer" target="_blank"  rel="noopener">Continue reading</a>
-            </div>
-            <div class="cards">
-                <h2>today</h2>
-                <div class="one">
-                    <div class="img img1">
-                        <div class="overlay">
-                        </div><div class="content">
-                                <p>Race98-03 June 2023</p>
-                                <a href="https://www.myhighplains.com/sports/ap-ethiopian-runner-tamirat-tola-wins-mens-marathon-at-paris-olympics-to-end-kenya-dominance/" target="_blank" rel="noopener" class="sp1">Ethiopian runners took the top four spots.</a>
-                            </div>
-                    </div>  
-                </div>
-                <div class="one">
-                    <div class="img img2">
-                        <div class="overlay">  
-                        </div><div class="content">
-                                <p>INDYCAR-03 June 2023</p>
-                                <a  href="https://www.autosport.com/indycar/news/indycar-detroit-dixon-quickest-in-second-practice-defrancesco-wrecks/10477917/" target="_blank" rel="noopener"  class="sp2">IndyCar Detroit: Dixon quickest in second practice</a>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </main>
+    <Nav>
+      <div class="navContainer">
+        <div class="logo">
+          <a href="#Home">
+            <img src="assets/logo1.png" alt="logo">
+          </a>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#Home" class="Active">Home</a></li>
+            <li><a href="#Category">Category</a></li>
+            <li><a href="#Trending">Trending News</a></li>
+            <li><a href="#Football">Recent News</a></li>
+            <li><a href="#News">Clubs Ranking</a></li>
+            <li><a href="#Articals">Sports Article</a></li>
+          </ul>
+        </div>
+        <button type="button" class="search-btn">
+          <i class="fas fa-search"></i>
+          <p>Search</p>
+        </button>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="#Home" class="Active">Home</a></li>
+            <li><a href="#Category">Category</a></li>
+            <li><a href="#Trending">Trending News</a></li>
+            <li><a href="#Football">Recent News</a></li>
+            <li><a href="#News">Clubs Ranking</a></li>
+            <li><a href="#Articals">Sports Article</a></li>
+            <li><button type="button" class="search-btn-mobile">Search</button></li>
+          </ul>
+        </div>
+      </div>
+    </Nav>
 
-    </header>
-    <div class="container">
-        <section id="Category">
-            <h3 class="category">Category</h3>
-            <div class="grid-container">
-                <div class="grid-item" id="one"><p class="gradient-text2"> FOOTBALL</p></div>
-                <div class="photo1"></div>
-                <div class="photo2"></div>
-                <div class="grid-item" id="two"><p class="gradient-text2">BASKET<br>BALL</p></div>
-                <div class="grid-item" id="three"><p class="gradient-text2">CAR SPORT</p></div>
-                <div class="photo3"></div>
-                <div class="photo4"></div>
-                <div class="grid-item" id="four"><p class="gradient-text2">TABLE<br>TENNIS</p></div>
+    <main id="Home">
+      <div class="main-content">
+        <p class="gradient-text"><span>Top </span><span class="typed-text">Scorer to the final match</span></p>
+        <img src="assets/basketball_sport_icon_in_minimalist_3d_render_2 1.png" alt="">
+      </div>
+      <img src="assets/output.png" alt="player" class="player-image">
+      <div class="bottom-content">
+        <p>The EuroLeague Finals Top Scorer is the individual award for the player that gained the highest points in the
+          EuroLeague Finals</p>
+        <a href="https://en.wikipedia.org/wiki/EuroLeague_Finals_Top_Scorer" target="_blank" rel="noopener">Continue
+          reading</a>
+      </div>
+      <div class="cards">
+        <h2>today</h2>
+        <div class="one">
+          <div class="img img1">
+            <div class="overlay">
             </div>
-        </section>
-        <section id="Trending"></section>
-        <section id="Football"></section>
-        <section id="News"></section>
-        <section id="Articals"></section>
-        <section id="Newsletter"></section>
-    </div>
-    <div class="top-button">
-        <i class="far fa-arrow-alt-circle-up"></i>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="script.js" async defer></script>
+            <div class="content">
+              <p>Race98-03 June 2023</p>
+              <a href="https://www.myhighplains.com/sports/ap-ethiopian-runner-tamirat-tola-wins-mens-marathon-at-paris-olympics-to-end-kenya-dominance/"
+                target="_blank" rel="noopener" class="sp1">Ethiopian runners took the top four spots.</a>
+            </div>
+          </div>
+        </div>
+        <div class="one">
+          <div class="img img2">
+            <div class="overlay">
+            </div>
+            <div class="content">
+              <p>INDYCAR-03 June 2023</p>
+              <a href="https://www.autosport.com/indycar/news/indycar-detroit-dixon-quickest-in-second-practice-defrancesco-wrecks/10477917/"
+                target="_blank" rel="noopener" class="sp2">IndyCar Detroit: Dixon quickest in second practice</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </header>
+  <div class="container">
+    <section id="Category">
+      <h3 class="fw-bold mb-4">Category</h3>
+      <div class="grid-container">
+        <div class="grid-item" id="one">
+          <p class="gradient-text gradient-text2"> FOOTBALL</p>
+        </div>
+        <div class="photo1"></div>
+        <div class="photo2"></div>
+        <div class="grid-item" id="two">
+          <p class="gradient-text gradient-text2">CAR SPORT</p>
+        </div>
+        <div class="grid-item" id="three">
+          <p class="gradient-text gradient-text2">BASKET BALL</p>
+        </div>
+        <div class="photo3"></div>
+        <div class="photo4"></div>
+        <div class="grid-item" id="four">
+          <p class="gradient-text gradient-text2">TABLE TENNIS</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="Trending">
+
+      <div class="left">
+        <h3 class="fw-bold mb-4">Trending News</h3>
+        <div class="news">
+          <div class="news-item" id="first">
+            <img src="/assets/race-hose 1.png" alt="First News">
+            <div class="news-description">
+              <h6 class="date">Race98 - 03 June 2023</h6>
+              <h4 class="fw-bold">6-Year-Old Horse Dies at  Belmont Park After Race Injury</h4>
+              <h6 class="description">NEW YORK-A 6-year-old horse died after  being injured in a race at Belmont
+                Park  ahead of next week's</h6>
+            </div>
+          </div>
+          <div class="news-item" id="second">
+            <img src="/assets/cyclist-leads-actionfront-view-man-riding-bicycle-racing-road 1.png" alt="Second News">
+            <div class="news-description">
+              <h6 class="date">Jony.Ls - 03 June 2023</h6>
+              <h4 class="fw-bold">Savilia Blunk Embraces Longer  Season With World Cup</h4>
+              <h6 class="description">Last year, Savilia Blunk took a moreconservative approach to her first
+                season as an Elite Class athlete, skipping some</h6>
+            </div>
+          </div>
+          <div class="news-item" id="third">
+            <img src="/assets/empty-boxing-arena-waiting-new-round-d-render-illustration 1.png" alt="">
+            <div class="news-description">
+              <h6 class="date">King.F - 03 June 2023</h6>
+              <h4 class="fw-bold">Ryan Garcia is fighting again,  this time on social media</h4>
+              <h6 class="description">Boxing star Ryan Garcia and his promoter,  Hall of Fame fighter Oscar De La
+                Hoya, reignited their war of words via Twitter on</h6>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="right">
+        <div class="top-left">
+          <h4>Cycling</h4>
+        </div>
+        <div class="bottom">
+          <h5>Debits - 03 June 2023</h5>
+          <h3><b>DISCOVER THE MEMBER 
+              BENEFITS OF USA CYCLING!</b></h3>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="Football"></section>
+    <section id="News"></section>
+    <section id="Articals"></section>
+    <section id="Newsletter"></section>
+  </div>
+  <div class="top-button">
+    <i class="far fa-arrow-alt-circle-up"></i>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js" async defer></script>
 </body>
+
 </html>

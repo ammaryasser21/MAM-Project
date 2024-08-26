@@ -10,7 +10,7 @@ menu.addEventListener('click', function() {
 
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 1000) {
     topButton.classList.add("show");
   } else {
     topButton.classList.remove("show");

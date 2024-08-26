@@ -1,0 +1,123 @@
+.page1{
+    margin: 100px 150px 100px 150px ;
+    padding: 60px;
+    background-color: rgb(244, 242, 242);
+    width: 1050px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    border-radius: 5px;
+    position: relative;
+}
+.title1{
+    position: absolute;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    background: linear-gradient(to bottom, black, rgb(187, 186, 186));
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    top: 30px;
+}
+
+.img1 {
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+    z-index: 2;
+    transition: opacity 0.3s ease, filter 0.3s ease; 
+}
+
+
+.img1:hover {
+    opacity: 0.9; 
+    filter: brightness(1.1); 
+}
+
+
+.img2 {
+    position: absolute;
+    right: 230px;
+    top: 40px;
+    z-index: 1;
+    transition: opacity 0.3s ease, filter 0.3s ease; 
+}
+
+
+.img2:hover {
+    opacity: 0.9; 
+    filter: brightness(1.1); 
+}
+
+
+.textbox1 {
+    position: absolute;
+    width: 360px;  
+    height: 40px; 
+    font-size: 18px;  
+    padding: 10px; 
+    border-top-left-radius: 5px ; 
+    border-bottom-left-radius: 5px;
+    top: 240px;
+    background-color: rgb(244, 242, 242); ;
+}
+
+.button1 {
+    width: 70px;  
+    height: 63px;  
+    background-color: #000; 
+    color: #fff; 
+    border-top-right-radius: 5px ; 
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 240px;
+    left: 440px;
+}
+
+.button1 .mark {
+    font-size: 30px; 
+    border-left: 5px ;
+}
+.textbox1::placeholder {
+
+    padding: 10px;
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    border-radius: 7px;
+    position: relative;
+    bottom: -250px;
+    left: -60px;
+    padding: 5px; 
+    gap: 15px; 
+}
+
+.social-link {
+    display: inline-block; 
+    text-decoration: none; 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+
+.social-link img {
+    width: 40px; 
+    height: auto; 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    background-color: #292929; 
+    border-radius: 7px; 
+}
+
+
+.social-link:hover img {
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
+
+
+.social-link:active img {
+    transform: scale(0.95); 
+    filter: brightness(0.8); 
+}

@@ -1,0 +1,32 @@
+#Trending{display:flex;flex-direction:row;justify-content:space-between;align-items:stretch}
+.news-item{display:flex;flex-direction:row;align-items:center;gap:20px}
+.news-item img{
+    width: 230px;
+}
+.news{display:flex;flex-direction:column;gap:20px}
+#first,#second{margin-bottom:20px}
+.news-description h6{color:#a3a3a3;}
+.news-description {width:362px ;}
+.right{color:#fff;position:relative;background-color:rgba(0,0,0,.6);background-size:cover;background-blend-mode:overlay;background-image:url("../assets/sportsman-drinking-water.png");background-repeat:no-repeat;width:50%;padding:20px;display:flex;flex-direction:column;justify-content:space-between}
+.top-left h4{color:#ccc;width:-moz-fit-content;width:fit-content;display:grid;place-items:center;padding:5px 10px;border:2px solid grey;}
+.bottom h5{color:#ccc}
+.news-description{
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 5px;
+}
+.news-item:nth-child(3) .news-description{
+border: none;
+}
+.news-item:hover h4{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (max-width:957px){
+#Trending{flex-direction:column;gap: 50px;}
+.right{width:100%;height:663px}
+}
+@media (max-width:557px){
+.news-item{flex-direction:column;justify-content:center;align-items:start}
+.news-description {width:-moz-fit-content;width:fit-content;}
+.news-item img{width:100%}
+}
