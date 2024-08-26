@@ -106,7 +106,3 @@ body:hover .custom-cursor{display:none}
 /*! ///////////////////  */
 .container{display:flex;flex-direction:column;gap:150px;justify-content:center;width:88.888889%;padding:0;margin-top:100px}
 .container section{display:flex;flex-direction:column;justify-content:center}
-body.dark-theme{background-color:#0f0f0f;}
-.theme-icon{font-size:24px;cursor:pointer}
-.fa-moon{color:#6a6a6a;font-size:25px}
-.fa-sun{color:#fff;font-size:25px}
