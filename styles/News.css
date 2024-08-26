@@ -38,8 +38,12 @@
 .newsCon img{width:20%}
 }
 @media (max-width:550px){
-#News{grid-template-columns:repeat(1,1fr);grid-template-areas:"news-left" "sec3_5"}
+#News{grid-template-columns:repeat(1,1fr);grid-template-areas:"news-left" "sec3_5";gap: 75px;
+}
+.club span{
+    text-wrap: nowrap;
+}
 .news-left{grid-area:news-left}
 .News-content{grid-template-columns:repeat(1,1fr);grid-template-areas:"sec1_5" "sec2_5"}
-.sec3_5{display:none}
+.sec3_5 .disappear{display:none}
 }
