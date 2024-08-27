@@ -28,6 +28,14 @@
 </head>
 
 <body>
+
+  <div id="search-container">
+    <div id="overlay"></div>
+    <div><input type="text" placeholder="search" name="search" id="search">
+    <i id="search-btn-icon" class="fas fa-search"></i></div>
+    
+
+  </div>
   <header>
 
     <!-- Navbar -->
@@ -122,7 +130,10 @@
     </main>
 
   </header>
-
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn">&#10006;</span>
+    <img id="lightbox-img" src="" alt="" class="lightbox-img">
+  </div>
   <!-- Sections /////////////////////////////////////////////-->
   <div class="container">
 
@@ -133,16 +144,16 @@
         <div class="grid-item  fade-element " id="one">
           <p class="gradient-text gradient-text2"> FOOTBALL</p>
         </div>
-        <div class="photo1  fade-element "></div>
-        <div class="photo2 fade-element "></div>
+        <div class="photo1  "></div>
+        <div class="photo2  "></div>
         <div class="grid-item fade-element " id="two">
           <p class="gradient-text gradient-text2">CAR SPORT</p>
         </div>
         <div class="grid-item fade-element " id="three">
           <p class="gradient-text gradient-text2">BASKET BALL</p>
         </div>
-        <div class="photo3 fade-element "></div>
-        <div class="photo4 fade-element "></div>
+        <div class="photo3  "></div>
+        <div class="photo4  "></div>
         <div class="grid-item fade-element " id="four">
           <p class="gradient-text gradient-text2">TABLE TENNIS</p>
         </div>
@@ -267,15 +278,13 @@
           <span class="carousel-control-prev-icon" style="width: 50px" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-        <button class="btn btn-light mx-1 pagination-btn active" data-bs-target="#newsCarousel" data-bs-slide-to="0">
-          1
-        </button>
-        <button class="btn btn-light mx-1 pagination-btn" data-bs-target="#newsCarousel" data-bs-slide-to="1">
-          2
-        </button>
-        <button class="btn btn-light mx-1 pagination-btn" data-bs-target="#newsCarousel" data-bs-slide-to="2">
-          3
-        </button>
+        <button id="btn-1" class="btn btn-light mx-1 pagination-btn active" data-bs-target="#newsCarousel"
+          data-bs-slide-to="0">1</button>
+        <button id="btn-2" class="btn btn-light mx-1 pagination-btn" data-bs-target="#newsCarousel"
+          data-bs-slide-to="1">2</button>
+        <button id="btn-3" class="btn btn-light mx-1 pagination-btn" data-bs-target="#newsCarousel"
+          data-bs-slide-to="2">3</button>
+
         <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" style="width: 50px" aria-hidden="true"></span>
           <span class="visually-hidden">Prev</span>
@@ -417,11 +426,14 @@
     <!-- Article -->
     <section id="Articals">
       <!-- Header -->
+
       <h1 class="fw-bold">Sports Article</h1>
       <div class="cards">
         <div class="card specialCard">
           <div class="special-tag">Basketball</div>
-          <img src="./assets/artical1.jpg" alt="">
+          <div class="artical-img">
+            <img src="./assets/artical1.jpg" alt="artical1" onclick="openLightbox(this.src)">
+          </div>
           <div class="tag">
             <img src="./assets/jakeWill.jpeg" alt="">
             <p>Jake Will</p>
@@ -429,12 +441,15 @@
           <div class="content">
             <p>04 June 2023</p>
             <h3>5 Exercises Basketball Players Should Be Using To Develop Strength</h3>
-            <p>This article was written by Jake Willhoite from Healthlisted.com Strength in basketball isn't all about a massive body mass or ripped muscles.</p>
+            <p>This article was written by Jake Willhoite from Healthlisted.com Strength in basketball isn't all about a
+              massive body mass or ripped muscles.</p>
           </div>
         </div>
         <div class="card specialCard">
           <div class="special-tag">Hockey</div>
-          <img src="./assets/artical2.jpg" alt="">
+          <div class="artical-img">
+            <img src="./assets/artical2.jpg" alt="artical2" onclick="openLightbox(this.src)">
+          </div>
           <div class="tag">
             <img src="./assets/adnan.webp" alt="">
             <p>Adnan Aganovic</p>
@@ -447,7 +462,9 @@
         </div>
         <div class="card specialCard">
           <div class="special-tag">Badminton</div>
-          <img src="./assets/artical3.jpg" alt="">
+          <div class="artical-img">
+            <img src="./assets/artical3.jpg" alt="artical3" onclick="openLightbox(this.src)">
+          </div>
           <div class="tag">
             <img src="./assets/Ferdinand_R._Marcos_Jr_(cropped).jpg" alt="">
             <p>Ferdinand R.Marcos</p>
@@ -455,7 +472,8 @@
           <div class="content">
             <p>01 June 2023</p>
             <h3>Outdoor' Badminton Gets Support From Local Federation</h3>
-            <p>The Badminton World Federation is developing Air Badminton and the country's governing body, Philippine Badminton Association.</p>
+            <p>The Badminton World Federation is developing Air Badminton and the country's governing body, Philippine
+              Badminton Association.</p>
           </div>
         </div>
       </div>
@@ -465,15 +483,15 @@
     </section>
 
     <!-- Newsletter -->
-    <section id="Newsletter"  class="py-5">
+    <section id="Newsletter" class="py-5">
       <div class="top">
         <div class="left">
           <h1 class="gradient-text gradient-text2">NEWSLETTER <br>SUBSCRIPTION</h1>
           <div class="form1">
             <input type="text" id="newsletterEmail" class="textbox1" placeholder="shovon.khan0099@gmail.com">
-            <button  id="newsletterForm" class="button1"><span>↗</span></button>
+            <button id="newsletterForm" class="button1"><span>↗</span></button>
           </div>
-          
+
         </div>
         <div class="right">
           <img src="./assets/american-football-player-posing-with-ball-white 1.png" alt="" class="img1">
