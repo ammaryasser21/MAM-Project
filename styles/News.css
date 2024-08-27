@@ -17,7 +17,6 @@
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "sec1_5 sec2_5";
     gap: 20px;
-    height: 100%
 }
 
 .sec2_5 {
@@ -32,12 +31,10 @@
 
 .sec1_5 {
     grid-area: sec1_5;
-    height: 100%
 }
 
 .sec3_5 {
     grid-area: sec3_5;
-    height: 100%
 }
 
 .picCon {
@@ -129,14 +126,12 @@
 .table-container {
     width: 100%;
     overflow-x: auto;
-    height: 100%
 }
 
 .league-table {
     width: 100%;
     border-collapse: collapse;
     background-color: #fff;
-    height: 100%
 }
 
 .league-table td,

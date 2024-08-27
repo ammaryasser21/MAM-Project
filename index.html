@@ -120,30 +120,30 @@
         </div>
       </div>
     </main>
-    
+
   </header>
 
   <!-- Sections /////////////////////////////////////////////-->
   <div class="container">
 
     <!-- Category -->
-    <section id="Category">
+    <section id="Category"  class="fade-section">
       <h3 class="fw-bold mb-4">Category</h3>
       <div class="grid-container">
-        <div class="grid-item" id="one">
+        <div class="grid-item  fade-element " id="one">
           <p class="gradient-text gradient-text2"> FOOTBALL</p>
         </div>
-        <div class="photo1"></div>
-        <div class="photo2"></div>
-        <div class="grid-item" id="two">
+        <div class="photo1  fade-element "></div>
+        <div class="photo2 fade-element "></div>
+        <div class="grid-item fade-element " id="two">
           <p class="gradient-text gradient-text2">CAR SPORT</p>
         </div>
-        <div class="grid-item" id="three">
+        <div class="grid-item fade-element " id="three">
           <p class="gradient-text gradient-text2">BASKET BALL</p>
         </div>
-        <div class="photo3"></div>
-        <div class="photo4"></div>
-        <div class="grid-item" id="four">
+        <div class="photo3 fade-element "></div>
+        <div class="photo4 fade-element "></div>
+        <div class="grid-item fade-element " id="four">
           <p class="gradient-text gradient-text2">TABLE TENNIS</p>
         </div>
       </div>
@@ -199,7 +199,137 @@
     </section>
 
     <!-- Football -->
-    <section id="Football"></section>
+    <section id="Football">
+        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="card bg-dark text-white">
+                <img
+                  src="assets/football.png"
+                  class="card-img"
+                  alt="Football"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end"
+                >
+                  <div class="title">Football</div>
+                  <p class="text-paragraph">
+                    Agence France-Presse – 04 June 2023
+                  </p>
+                  <h5 class="card-title fw-bold">
+                    LIONEL MESSI LEAVING LIGUE 1 TEAM PARIS SAINT-GERMAIN, CLUB
+                    CONFIRMS
+                  </h5>
+                  <p class="card-text">
+                    The EuroLeague Finals Top Scorer is the individual award for
+                    the player that gained the highest points in the EuroLeague
+                    Finals
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="card bg-dark text-white">
+                <img
+                  src="assets/football2.png"
+                  class="card-img"
+                  alt="Football"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end"
+                >
+                  <div class="title">Football</div>
+                  <p class="text-paragraph">
+                    Agence France-Presse – 05 June 2023
+                  </p>
+                  <h5 class="card-title fw-bold">ANOTHER NEWS TITLE</h5>
+                  <p class="card-text">
+                    Some additional description for the second news item goes
+                    here.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Add more slides as needed -->
+            <div class="carousel-item">
+              <div class="card bg-dark text-white">
+                <img
+                  src="assets/two-opposing-players-give-handshake-end-game 1.png"
+                  class="card-img"
+                  alt="Football"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end"
+                >
+                  <div class="title">Football</div>
+                  <p class="text-paragraph">
+                    Agence France-Presse – 05 June 2023
+                  </p>
+                  <h5 class="card-title fw-bold">ANOTHER NEWS TITLE</h5>
+                  <p class="card-text">
+                    Some additional description for the second news item goes
+                    here.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Pagination Buttons -->
+  
+        <div class="d-flex justify-content-end mt-3 buttons-container">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#newsCarousel"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              style="width: 50px"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <button
+            class="btn btn-light mx-1 pagination-btn active"
+            data-bs-target="#newsCarousel"
+            data-bs-slide-to="0"
+          >
+            1
+          </button>
+          <button
+            class="btn btn-light mx-1 pagination-btn"
+            data-bs-target="#newsCarousel"
+            data-bs-slide-to="1"
+          >
+            2
+          </button>
+          <button
+            class="btn btn-light mx-1 pagination-btn"
+            data-bs-target="#newsCarousel"
+            data-bs-slide-to="2"
+          >
+            3
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#newsCarousel"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              style="width: 50px"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Prev</span>
+          </button>
+        </div>
+    </section>
 
     <!-- News -->
     <section id="News">

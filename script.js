@@ -109,3 +109,18 @@ function checkInView() {
 
 checkInView();
 window.addEventListener("scroll", checkInView);
+
+//* handle the active class for pagination buttons (Football section)
+
+function handlePagination() {
+  const paginationButtons = document.querySelectorAll(".pagination-btn");
+
+  paginationButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      paginationButtons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+}
+
+handlePagination();
