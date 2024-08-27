@@ -338,7 +338,7 @@ main .cards h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, #dfdede 30%, transparent 70%);
+    background: linear-gradient(to top, #ffffff 30%, transparent 70%);
     -webkit-background-clip: content-box;
     background-clip: content-box;
     color: transparent
@@ -456,7 +456,9 @@ main .bottom-content a:hover {
 
     main .player-image:hover {
         transition: all .2s;
-        width: 100%
+        width: 100%;
+        top: 50px;
+    left: 50%
     }
 
     main .main-content {

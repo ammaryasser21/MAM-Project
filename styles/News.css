@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "news-left news-left sec3_5 sec3_5";
-    padding: 20px;
     gap: 20px
 }
 

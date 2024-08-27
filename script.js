@@ -3,7 +3,7 @@
 const topButton = document.querySelector(".top-button");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 1500) {
+  if (window.scrollY > 2500) {
     topButton.classList.add("show");
   } else {
     topButton.classList.remove("show");
@@ -36,7 +36,7 @@ menu.addEventListener("click", function () {
   mobileMenu.classList.toggle("open");
 });
 
-//* active links  (navbar section)
+//* active links  (Navbar section)
 
 const links = document.querySelectorAll(".links a");
 

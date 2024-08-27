@@ -1,0 +1,82 @@
+#Articals{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#Articals h1{
+    font-size: 1.7rem;
+}
+
+#Articals .cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#Articals .cards .card{
+    position: relative;
+    display: flex;
+    width: 32%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 16px;
+    background-color: #ebe8e874;
+    border: none;
+}
+.special-tag{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    padding: 5px;
+    
+}
+#Articals .cards .card img{
+    width: 100%;
+height: 300px;
+object-fit: cover;
+}
+#Articals .cards .card .tag{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 10px;
+padding-inline: 16px;
+}
+#Articals .tag p{
+    font-size: 14px;
+}
+#Articals .cards .card .tag img{ width: 50px; height: 50px; -o-border-radius:100% ; -webkit-border-radius:100% ; -moz-border-radius:100% ; -ms-border-radius:100% ; border-radius:100% ;
+}
+#Articals .cards .card .content{
+display: flex;
+
+flex-direction: column;
+gap: 10px;
+padding-block: 0;
+padding-top: 20px;
+padding-inline: 16px;
+position: relative;
+}
+#Articals .cards .card .content p{
+font-size: 16px;
+color: rgb(141, 141, 141);
+font-weight: 500;
+}
+#Articals .cards .card .content h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+@media (max-width:768px) {
+    #Articals .cards .card{
+        width: 100%;
+    }
+}
+
