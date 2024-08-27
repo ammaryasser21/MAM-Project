@@ -2,7 +2,7 @@
 const topButton = document.querySelector(".top-button");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 2500) {
+  if (window.scrollY > 3000) {
     topButton.classList.add("show");
   } else {
     topButton.classList.remove("show");
@@ -74,21 +74,6 @@ function erase() {
 }
 
 setTimeout(type, 1000);
-
-//* fade out effect (category section)
-const fadeSection = document.getElementById("Category");
-const fadeElements = document.querySelectorAll(".fade-element");
-
-function checkInView() {
-  const sectionRect = fadeSection.getBoundingClientRect();
-  if (sectionRect.top <= window.innerHeight && sectionRect.bottom >= 0) {
-    fadeSection.classList.add("in-view");
-    fadeElements.forEach((el) => el.classList.add("in-view"));
-  }
-}
-
-checkInView();
-window.addEventListener("scroll", checkInView);
 
 //* handle the active class for pagination buttons (Football section)
 function handlePagination() {
@@ -228,6 +213,7 @@ style.innerHTML = `
   .highlight {
     background-color: #7a7abc;
     padding: 2px;
+    color: #fff;
   }
 `;
 document.head.appendChild(style);
