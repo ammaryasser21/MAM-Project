@@ -1,30 +1,142 @@
-#Trending{display:flex;flex-direction:row;justify-content:space-between;align-items:stretch;background-color:#ebe8e874}
-#Trending .news-item{display:flex;flex-direction:row;align-items:stretch;gap:20px}
-#Trending .news-item img{width:200px;aspect-ratio:2/1}
-#Trending .left{padding:20px}
-#Trending .news{display:flex;flex-direction:column;gap:20px}
-#first,#second{margin-bottom:20px}
-#Trending .news-description h6{color:#a3a3a3}
-#Trending .news-description{width:362px}
-#Trending .right{color:#fff;background-color:rgba(0,0,0,.6);background-size:cover;background-blend-mode:overlay;background-image:url(../assets/sportsman-drinking-water.png);background-repeat:no-repeat;width:50%;padding:20px;display:flex;flex-direction:column;justify-content:space-between}
-#Trending .top-left h4{color:#ccc;width:-moz-fit-content;width:fit-content;display:grid;place-items:center;padding:5px 10px;border:2px solid grey}
-#Trending .bottom h5{color:#ccc}
-#Trending .news-description{border-bottom:1px solid #d5d5d5;padding-bottom:5px}
-#Trending .news-item:nth-child(3) .news-description{border:none}
-#Trending .news-item:hover h5{text-decoration:underline;cursor:pointer}
-#Trending .news-item h5{width:82%}
-#Trending .news-item h6{width:91%}
-@media (max-width:957px){
-#Trending{flex-direction:column;gap:50px}
-#Trending .right{width:100%;height:663px}
+#Trending {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #ebe8e874
 }
-@media (max-width:557px){
-#Trending .news-item{flex-direction:column;justify-content:center;align-items:start}
-#Trending .news-description{width:-moz-fit-content;width:fit-content}
-#Trending .news-item img{width:100%}
-#Trending .news-item h5{width:100%}
-#Trending .news-item h6{width:100%}
-#Trending .news-description{width:100%}
-#Trending .news-item{flex-direction:column}
-#Trending .news-item img{width:100%;aspect-ratio:1}
+
+#Trending .news-item {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px
+}
+
+#Trending .news-item img {
+    width: 200px;
+    aspect-ratio: 2/1
+}
+
+#Trending .left {
+    padding: 20px
+}
+
+#Trending .news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+#first,
+#second {
+    margin-bottom: 20px
+}
+
+#Trending .news-description h6 {
+    color: #a3a3a3
+}
+
+#Trending .news-description {
+    width: 362px
+}
+
+#Trending .right {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-image: url(../assets/sportsman-drinking-water.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+#Trending .top-left h4 {
+    color: #ccc;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: grid;
+    place-items: center;
+    padding: 5px 10px;
+    border: 2px solid grey
+}
+
+#Trending .bottom h5 {
+    color: #ccc
+}
+
+#Trending .news-description {
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 5px
+}
+
+#Trending .news-item:nth-child(3) .news-description {
+    border: none
+}
+
+#Trending .news-item:hover h5 {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+#Trending .news-item h5 {
+    width: 82%
+}
+
+#Trending .news-item h6 {
+    width: 91%
+}
+
+@media (max-width:957px) {
+    #Trending {
+        flex-direction: column;
+        gap: 50px
+    }
+
+    #Trending .right {
+        width: 100%;
+        height: 663px
+    }
+}
+
+@media (max-width:557px) {
+    #Trending .news-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start
+    }
+
+    #Trending .news-description {
+        width: -moz-fit-content;
+        width: fit-content
+    }
+
+    #Trending .news-item img {
+        width: 100%
+    }
+
+    #Trending .news-item h5 {
+        width: 100%
+    }
+
+    #Trending .news-item h6 {
+        width: 100%
+    }
+
+    #Trending .news-description {
+        width: 100%
+    }
+
+    #Trending .news-item {
+        flex-direction: column
+    }
+
+    #Trending .news-item img {
+        width: 100%;
+        aspect-ratio: 1
+    }
 }

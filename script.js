@@ -1,21 +1,6 @@
+//* show top-scroller && scroll to top in smoothly way  (All sections)
 
 const topButton = document.querySelector(".top-button");
-const links = document.querySelectorAll(".links a");
-const cursor = document.querySelector(".custom-cursor");
-const menu = document.querySelector(".hamburger-menu");
-const mobileMenu = document.querySelector(".mobile-menu");
-const typedText = document.querySelector(".typed-text");
-const phrases = ["Top Scorer", "Euro League Finals", "MVP Award"];
-let index = 0;
-let letterIndex = 0;
-
-//* toggle burger menu
-
-menu.addEventListener("click", function () {
-  mobileMenu.classList.toggle("open");
-});
-
-//* show top-scroller
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 1500) {
@@ -25,7 +10,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-//* scroll to top in smoothly way
 
 topButton.addEventListener("click", function () {
   window.scrollTo({
@@ -34,7 +18,27 @@ topButton.addEventListener("click", function () {
   });
 });
 
-//* active links
+//* new cursor  (All sections)
+
+const cursor = document.querySelector(".custom-cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = `${e.clientX}px`;
+  cursor.style.top = `${e.clientY}px`;
+});
+
+//* toggle burger menu  (Navbar section)
+
+const menu = document.querySelector(".hamburger-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+menu.addEventListener("click", function () {
+  mobileMenu.classList.toggle("open");
+});
+
+//* active links  (navbar section)
+
+const links = document.querySelectorAll(".links a");
 
 const Activate = () => {
   links.forEach((link) => {
@@ -44,15 +48,15 @@ const Activate = () => {
     });
   });
 };
+
 Activate();
 
-//* new cursor
-document.addEventListener("mousemove", (e) => {
-  cursor.style.left = `${e.clientX}px`;
-  cursor.style.top = `${e.clientY}px`;
-});
+//* type with erase effect (Hero section)
 
-//* type with erase effect
+const typedText = document.querySelector(".typed-text");
+const phrases = ["Top Scorer", "Euro League Finals", "MVP Award"];
+let index = 0;
+let letterIndex = 0;
 
 function type() {
   if (letterIndex < phrases[index].length) {
@@ -77,6 +81,31 @@ function erase() {
 
 setTimeout(type, 1000);
 
+//* scroll effect  (trending section)
 
+// ScrollReveal({ 
+//   reset: true,
+//   distance: '60px',
+//   duration:2500,
+//   delay: 400 
+// });
 
+// ScrollReveal().reveal('.right', { delay: 500, origin: 'right' });
+// ScrollReveal().reveal('.left h3', { delay: 500, origin: 'left' });
+// ScrollReveal().reveal('.news-item', { delay: 1200, origin: 'left', interval: 300 });  
 
+//* fade out effect (category section)
+
+const fadeSection = document.getElementById("Category");
+const fadeElements = document.querySelectorAll(".fade-element");
+
+function checkInView() {
+  const sectionRect = fadeSection.getBoundingClientRect();
+  if (sectionRect.top <= window.innerHeight && sectionRect.bottom >= 0) {
+    fadeSection.classList.add("in-view");
+    fadeElements.forEach((el) => el.classList.add("in-view"));
+  }
+}
+
+checkInView();
+window.addEventListener("scroll", checkInView);
