@@ -114,7 +114,6 @@ nav .links ul li a:hover {
     padding: 5px 10px;
     background-color: #c5c5c5;
     color: #fff;
-    border-radius: 5px;
     font-size: 14px;
     transition: all .3s ease-in-out;
     cursor: none;
@@ -137,7 +136,7 @@ nav .links ul li a:hover {
     width: 25px;
     height: 3px;
     background-color: #333;
-    border-radius: 3px
+    border-radius: 3px;
 }
 
 [type=button]:not(:disabled),
@@ -180,7 +179,6 @@ button:not(:disabled) {
     background-color: #c5c5c5;
     color: #fff;
     border: none;
-    border-radius: 5px;
     font-size: 14px;
     cursor: none
 }
@@ -290,15 +288,12 @@ main .cards h2 {
     width: fit-content;
     padding: 4px 15px;
     margin-bottom: 14px;
-    border-radius: 3px;
     color: #bbb
 }
 
 .img {
-    -o-border-radius: 5px;
     width: 250px;
     height: 250px;
-    border-radius: 5px;
     transition: transform .5s ease, box-shadow .5s ease, opacity .5s ease
 }
 
@@ -416,7 +411,6 @@ main .bottom-content a {
     font-size: 25px;
     text-transform: uppercase;
     background-color: #313131;
-    border-radius: 5px;
     padding: 10px 30px;
     transition: all .3s
 }
@@ -505,7 +499,6 @@ main .bottom-content a:hover {
         width: fit-content;
         padding: 4px 15px;
         margin-bottom: 14px;
-        border-radius: 3px;
         color: #bbb
     }
 
@@ -583,7 +576,6 @@ main .bottom-content a:hover {
         width: fit-content;
         padding: 4px 15px;
         margin-bottom: 14px;
-        border-radius: 3px;
         color: #bbb
     }
 

@@ -1,5 +1,4 @@
 //* show top-scroller && scroll to top in smoothly way  (All sections)
-
 const topButton = document.querySelector(".top-button");
 
 window.addEventListener("scroll", function () {
@@ -10,7 +9,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
 topButton.addEventListener("click", function () {
   window.scrollTo({
     top: 0,
@@ -19,7 +17,6 @@ topButton.addEventListener("click", function () {
 });
 
 //* new cursor  (All sections)
-
 const cursor = document.querySelector(".custom-cursor");
 
 document.addEventListener("mousemove", (e) => {
@@ -28,7 +25,6 @@ document.addEventListener("mousemove", (e) => {
 });
 
 //* toggle burger menu  (Navbar section)
-
 const menu = document.querySelector(".hamburger-menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 
@@ -37,7 +33,6 @@ menu.addEventListener("click", function () {
 });
 
 //* active links  (Navbar section)
-
 const links = document.querySelectorAll(".links a");
 
 const Activate = () => {
@@ -52,7 +47,6 @@ const Activate = () => {
 Activate();
 
 //* type with erase effect (Hero section)
-
 const typedText = document.querySelector(".typed-text");
 const phrases = ["Top Scorer", "Euro League Finals", "MVP Award"];
 let index = 0;
@@ -81,21 +75,7 @@ function erase() {
 
 setTimeout(type, 1000);
 
-//* scroll effect  (trending section)
-
-// ScrollReveal({ 
-//   reset: true,
-//   distance: '60px',
-//   duration:2500,
-//   delay: 400 
-// });
-
-// ScrollReveal().reveal('.right', { delay: 500, origin: 'right' });
-// ScrollReveal().reveal('.left h3', { delay: 500, origin: 'left' });
-// ScrollReveal().reveal('.news-item', { delay: 1200, origin: 'left', interval: 300 });  
-
 //* fade out effect (category section)
-
 const fadeSection = document.getElementById("Category");
 const fadeElements = document.querySelectorAll(".fade-element");
 
@@ -108,10 +88,9 @@ function checkInView() {
 }
 
 checkInView();
-window.addEventListener("scroll", checkInView);
+window.addEventListener("scroll", checkInView);
 
 //* handle the active class for pagination buttons (Football section)
-
 function handlePagination() {
   const paginationButtons = document.querySelectorAll(".pagination-btn");
 
@@ -124,3 +103,38 @@ function handlePagination() {
 }
 
 handlePagination();
+
+//* handle the validation (newsLetter section)
+const newsletterForm = document.querySelector("#newsletterForm");
+const emailInput = document.querySelector("#newsletterEmail");
+
+newsletterForm.addEventListener("click", function () {
+  const emailValue = emailInput.value.trim();
+
+  if (emailValue == "") {
+    alert("Please enter a valid email address.");
+  } else {
+    emailInput.value = "";
+    alert("Thank you for subscribing!");
+  }
+});
+
+//* scroll effects (All section)
+const sr = ScrollReveal({
+  distance: "60px",
+  duration: 1500,
+  delay: 200,
+});
+
+sr.reveal("#Category", { origin: "bottom" });
+sr.reveal("#Trending", { origin: "bottom" });
+sr.reveal("#Football", { origin: "bottom" });
+sr.reveal("#News", { origin: "bottom" });
+sr.reveal("#Articals", { origin: "bottom" });
+sr.reveal("#Newsletter", { origin: "bottom" });
+
+sr.reveal(".news-item", { interval: 200 });
+sr.reveal(".article-item", { interval: 200 });
+sr.reveal(".fade-element", { interval: 100 });
+sr.reveal(".specialCard", { interval: 200 });
+sr.reveal(".News-items", { interval: 200 });
