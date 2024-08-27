@@ -46,7 +46,7 @@
     background-color: rgba(0, 0, 0, .6);
     background-size: cover;
     background-blend-mode: overlay;
-    background-image: url(../assets/sportsman-drinking-water.png);
+    background-image: url("../assets/sportsman-drinking-water.png");
     background-repeat: no-repeat;
     width: 50%;
     padding: 20px;
